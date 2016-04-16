@@ -90,6 +90,13 @@ function removeCursor(id){
 }
 
 
+function probandoVisualStudioCode(str) {
+  console.log('multiple-cursors');
+  console.log("testing");
+  console.log('multiple-cursors');
+  console.log("git test");
+}
+
 
 /*
 * Blinking cursor "|" implementation
