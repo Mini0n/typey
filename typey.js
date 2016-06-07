@@ -4,8 +4,9 @@
 * github/mini0n
 */
 
+//Checking GIT integration in ATOM Editor
 
-/* 
+/*
 * typeText(id, txt, ms, cursor, cursorMs, tags;
 * params:
 * - id = DOM element id
@@ -83,12 +84,11 @@ function getLastCursor(id){
 */
 function removeCursor(id){
   var cur = getLastCursor(id);
-  if (cur){ 
+  if (cur){
     cur.remove();
     return true;
   } else { return false; }
 }
-
 
 function probandoVisualStudioCode(str) {
   console.log('multiple-cursors');
@@ -96,7 +96,6 @@ function probandoVisualStudioCode(str) {
   console.log('multiple-cursors');
   console.log("git test");
 }
-
 
 /*
 * Blinking cursor "|" implementation
@@ -125,7 +124,7 @@ function cursorBlink(id, ms){
     if (tmo!==false){
       setTimeout(function(){
         cur.remove();
-        clearInterval(c); 
+        clearInterval(c);
       }, tmo);
     }
     return true;
@@ -159,9 +158,9 @@ function generateCurId(){
 //     if (dom==null){ clearInterval(c); }
 //   }, 400);
 //   if (tmo!==false){
-//     setTimeout(function(){ 
+//     setTimeout(function(){
 //       dom.remove();
-//       clearInterval(c); 
+//       clearInterval(c);
 //     }, tmo);
 //   }
 //   return cId;
